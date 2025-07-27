@@ -11,46 +11,212 @@
 <body>
     <section id="landing">
         <nav>
-            <div class="nav__logo">
-                <img class="logo" src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="LOGO">
-            </div>
-            <div class="nav_links">
-                <a href="#" class="nav__link">About</a>
-                <a href="#" class="nav__link">Blog</a>
-                <a href="#" class="nav__link">Pricing</a>
-                <a href="#" class="nav__link">Contact Us</a>
-                <a href="#" class="nav__link">Login</a>
-                <a href="#" class="nav__link nav__link--primary">Sign up</button>
-                <button class="btn__menu" onclick="openMenu()">
-                    <i class="fas fa-bars"></i>
-                </button>
-                <div class="menu__backdrop">
-                    <button class="btn__menu btn__menu--close" onclick="closeMenu()">
-                        <i class="fas fa-times"></i>
-                    </button>
-                    <ul class="menu__links">
-                        <li class="menu__list">
-                            <a href="#about" class="menu__link" onclick="closeMenu()">About</a>
-                        </li>
-                        <li class="menu__list">
-                            <a href="#blog" class="menu__link" onclick="closeMenu()">Blog</a>
-                        </li>
-                        <li class="menu__list">
-                            <a href="#pricing" class="menu__link" onclick="closeMenu()">Pricing</a>
-                        </li>
-                        <li class="menu__list">
-                            <a href="#contact__us" class="menu__link" onclick="closeMenu()">Contact Us</a>
-                        </li>
-                        <li class="menu__list">
-                            <a href="#login" class="menu__link" onclick="closeMenu()">Login</a>
-                        </li>
-                        <li class="menu__list">
-                            <a href="#signup" class="menu__link" onclick="closeMenu()">Sign up</a>
-                        </li>
-                    </ul>
+            <div class="row nav__row">
+                <div class="nav__logo">
+                    <img class="nav__logo--img" src="./assets/logo.2c489fc453a1783cbadacf914efa3df6.svg" alt="LOGO">
+                    <div class="nav__logo--title">Treact</div>
                 </div>
+                <div class="nav__links">
+                    <a href="#" class="nav__link">About</a>
+                    <a href="#" class="nav__link">Blog</a>
+                    <a href="#" class="nav__link">Pricing</a>
+                    <a href="#" class="nav__link">Contact Us</a>
+                    <a href="#" class="nav__link login">Login</a>
+                    <a href="#" class="nav__link nav__link--primary">Sign Up</a>
+                </div>
+                <button class="btn__menu" onclick="openMenu()">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="btn__menu--svg">
+                        <line x1="3" y1="12" x2="21" y2="12"></line>
+                        <line x1="3" y1="6" x2="21" y2="6"></line>
+                        <line x1="3" y1="18" x2="21" y2="18"></line>
+                    </svg>
+                </button>
             </div>
         </nav>
+        <div class="menu">
+            <button class="btn__menu btn__menu--close" onclick="closeMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="light___StyledCloseIcon-lj69nl-14 fASujC">
+                    <line x1="18" y1="6" x2="6" y2="18"></line>
+                    <line x1="6" y1="6" x2="18" y2="18"></line>
+                </svg>
+            </button>
+            <div class="menu__links">
+                <a href="#about" class="menu__link" onclick="closeMenu()">About</a>
+                <a href="#blog" class="menu__link" onclick="closeMenu()">Blog</a>
+                <a href="#pricing" class="menu__link" onclick="closeMenu()">Pricing</a>
+                <a href="#contact__us" class="menu__link" onclick="closeMenu()">Contact Us</a>
+                <a href="#login" class="menu__link" onclick="closeMenu()">Login</a>
+                <a href="#signup" class="menu__link menu__link--primary" onclick="closeMenu()">Sign up</a>
+            </div>
+        </div>
+        <header>
+            <div class="container">
+                <div class="row">
+                    <div class="header__description">
+                        <h1>Beautiful React Templates <span class=purple>For You</span></h1>
+                        <p class="header__description--para">
+                            Our templates are easy to set up, understand and customize. Fully modular components with a variety of pages and components.
+                        </p>
+                        <div class="header__email">
+                            <input type="text" class="header__email--input" placeholder="Your E-mail Address">
+                            <button class="header__email--btn">Get Started</button>
+                        </div>
+                        <p class="header__customers--title">OUR TRUSTED CUSTOMERS</p>
+                        <img src="./assets/customers-logo-strip.680ac7c2e8ae28161d2c.png" class="header__customers">
+                    </div>
+                    <figure class="header__img--wrapper">
+                        <img src="./assets/design-illustration-2.6da6a00b20c07c4a9b65d1870679e1b8.svg" class="header__img">
+                    </figure>
+                </div>
+            </div>
+        </header>
     </section>
+    <main>
+        <section id="features">
+            <div class="container">
+                <div class="row__narrow">
+                    <h4 class="section__tag">FEATURES</h4>
+                    <h2 class="section__title">We Have Amazing <span class="purple">Service</span></h2>
+                    <div class="section__para">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem eligendi similique architecto totam sed laudantium cumque esse, dolorem quo nobis.
+                    </div>
+                    <div class="features">
+                        <div class="feature">
+                            <div class="feature__row">
+                                <figure class="img__wrapper">
+                                    <img src="./assets/shield-icon.daefe14b320b14fbd9cbd18908ac93ec.svg" class="feature__img">
+                                </figure>
+                                <div class="feature__text">
+                                    <h2 class="feature__title">Secure</h2>
+                                    <p class="feature__para">"We strictly only deal with vendors that provide top notch security</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature__row">
+                                <figure class="img__wrapper">
+                                    <img src="./assets/support-icon.f9253ffa8cb6ffde5bbaa05eb5136375.svg" class="feature__img">
+                                </figure>
+                                <div class="feature__text">
+                                    <h2 class="feature__title">24/7 Supprt</h2>
+                                    <p class="feature__para">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda ut eius facere omnis mollitia ad.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature__row">
+                                <figure class="img__wrapper">
+                                    <img src="/assets/customize-icon.367468c90fd796009b97fbfba67b2c6a.svg" class="feature__img">
+                                </figure>
+                                <div class="feature__text">
+                                    <h2 class="feature__title">Customizable</h2>
+                                    <p class="feature__para">
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Temporibus iste voluptas itaque dolorem, harum laborum.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature__row">
+                                <figure class="img__wrapper">
+                                    <img src="/assets/reliable-icon.1367510a8f0a1bec76dc425d25f92f43.svg" class="feature__img">
+                                </figure>
+                                <div class="feature__text">
+                                    <h2 class="feature__title">Reliable</h2>
+                                    <p class="feature__para">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis magni aliquam laboriosam reprehenderit tenetur excepturi!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature__row">
+                                <figure class="img__wrapper">
+                                    <img src="/assets/fast-icon.dbb971a73d4805d2fc3bcdacdb55beba.svg" class="feature__img">
+                                </figure>
+                                <div class="feature__text">
+                                    <h2 class="feature__title">Fast</h2>
+                                    <p class="feature__para">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam voluptas eligendi eaque repellat, doloribus eum.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <div class="feature__row">
+                                <figure class="img__wrapper">
+                                    <img src="/assets/simple-icon.673b7e1750b2a4ef32907fc164828d00.svg" class="feature__img">
+                                </figure>
+                                <div class="feature__text">
+                                    <h2 class="feature__title">Easy</h2>
+                                    <p class="feature__para">
+                                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim ratione, consectetur fugiat minima ipsa vel.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="quality">
+            <div class="container">
+                <div class="row">
+
+                </div>
+            </div>
+        </section>
+        <section id="steps">
+            <div class="container">
+                <div class="row">
+                    <div class="quality__description">
+                        <div class="section__tag">QUALITY WORK</div>
+                        <h2 class="section__title">
+                            Designed & Developed by <span class="purple">Proffessionals</span>
+                        </h2>
+                        <p class="section__para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim quam cupiditate commodi qui excepturi laborum adipisci officiis, corporis possimus. Reiciendis?</p>
+                    </div>
+                    <figure class="quality__img--wrapper">
+                        <img src="/asset"
+                    </figure>
+                </div>
+            </div>
+        </section>
+        <section id="values">
+            <div class="container">
+                <div class="row">
+
+                </div>
+            </div>
+        </section>
+        <section id="pricing">
+            <div class="container">
+                <div class="row">
+
+                </div>
+            </div>
+        </section>
+        <section id="tesimonials">
+            <div class="container">
+                <div class="row">
+
+                </div>
+            </div>
+        </section>
+        <section id="start">
+            <div class="container">
+                <div class="row">
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="row footer__row">
+
+        </div>
+    </footer>
 </body>
 </html>
