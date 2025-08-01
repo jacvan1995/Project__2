@@ -752,6 +752,9 @@ header {
     width: 256px;
     opacity: 0.25;
 }
+.plans {
+    display: flex;
+}
 
 /* TESTIMONIALS */
 
