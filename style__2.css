@@ -713,7 +713,7 @@ header {
 .plan:nth-child(2) .plan__stripes {
     visibility: hidden;
 }
-.plan:nth-child(3) .plan__stripes,
+.plan:nth-child(3) .plan__stripe,
 .plan:nth-child(3) .plan__button {
     color: #f7fafc;
     background: linear-gradient(115deg, rgb(245, 101, 101) 0%, rgb(254, 178, 178) 100%);
@@ -908,6 +908,16 @@ main {
     bottom: 0;
     left: 0;
     transform: translateX(-80px) translateY(128px) scaleX(1) scaleY(1);
+    width: 320px;
+    height: 320px;
+    z-index: 1;
+    opacity: 0.5;
+}
+.start__blob--2 {
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translateX(80px) translateY(-256);
     width: 320px;
     height: 320px;
     z-index: 1;
